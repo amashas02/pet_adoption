@@ -1,0 +1,164 @@
+/* Import Arima Light 300 Font */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+
+/*Header Styles*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:rgba(16, 125, 188, 0.9);
+}
+/*Footer Styles*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #acb48c;
+    margin-top: 20px;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arima', cursive; /* Updated to use Arima Light 300 */
+    font-weight: 300; /* Set font weight */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height */
+    background-image: url('images/PawfectMatch.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 20px; /* Space between header and nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Button color */
+    color: #000000;
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Arima', cursive; /* Apply Arima font */
+    font-weight: 300; /* Set font weight */
+}
+
+.nav-button:hover {
+    background-color: #BC1058; /* Hover color */
+}
+
+/* Pet Listing Styles */
+.pet {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effect */
+}
+
+.pet:hover {
+    transform: scale(1.05); /* Slightly enlarge the pet card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.pet img {
+    max-width: 150px;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.pet h2 {
+    font-size: 24px;
+    color: #ff6f61; /* Heading color from the palette */
+}
+
+/* Application Status Styles */
+.application-status {
+    margin: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 5px;
+    border-left: 5px solid #ff6f61; /* Border color from the palette */
+}
+
+.application-status h3 {
+    font-size: 20px;
+    color: #333; /* Dark gray for contrast */
+}
+
+/* Additional Styles for Buttons */
+button {
+    padding: 10px 15px;
+    background-color: #ff7e5f; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-family: 'Arima', cursive; /* Apply Arima font to buttons */
+    font-weight: 300; /* Set font weight */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+button:hover {
+    background-color: #feb47b; /* Button hover color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for forms */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border-left: 5px solid #ff6f61; /* Border color from the palette */
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Arima', cursive; /* Apply Arima font to form inputs */
+    font-weight: 300; /* Set font weight */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    form {
+        width: 90%; /* Full width for forms on smaller screens */
+    }
+}
